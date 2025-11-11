@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import logo from './assets/logo.png';
 import solarBg from './assets/images.jpg';
 
@@ -9,9 +9,6 @@ export default function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
-  const scrollTo = (ref: React.RefObject<HTMLDivElement>) => {
-    ref.current?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <>
